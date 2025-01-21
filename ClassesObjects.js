@@ -64,5 +64,4 @@ class MathUtils {
 console.log(MathUtils.add(5, 10)); 
 console.log(MathUtils.multiply(5, 10)); 
 
-//Example 4
 
