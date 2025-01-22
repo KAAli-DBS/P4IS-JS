@@ -2,7 +2,9 @@
 // Making Class
 class Car {
     constructor(brand, model) {
-        this.brand = brand;
+
+        // 'this' refers to the new instance of Car
+        this.brand = brand;     
         this.model = model;
     }
 
@@ -32,6 +34,7 @@ class BankAccount {
 
     deposit(amount) {
         this.balance += amount;
+        //Inside methods of the class, this refers to the object that the method was called on (i.e., the current instance of the class).
         console.log(`${this.owner} deposited $${amount}. New balance: $${this.balance}`);
     }
 
@@ -64,4 +67,23 @@ class MathUtils {
 console.log(MathUtils.add(5, 10)); 
 console.log(MathUtils.multiply(5, 10)); 
 
+//Example 4
+class Counter {
+    #count = 0; // Private field
+
+    increment() {
+        this.#count++;
+        console.log(`Count is now: ${this.#count}`);
+    }
+
+    // Access private field through a public method
+    getCount() {
+        return this.#count; 
+    }
+}
+
+const counter = new Counter();
+counter.increment(); 
+console.log(counter.getCount()); 
+// console.log(counter.#count); 
 
