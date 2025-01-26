@@ -11,6 +11,9 @@ class ElectronicDevice {
      this.powerStatus = false;
      console.log(`${this.brand} device is now OFF.`);
     }
+
+    // Syntax of the Ternary Operator: condition ? valueIfTrue : valueIfFalse
+
     checkPowerStatus() {
      return this.powerStatus ? `${this.brand} device is ON.` : `${this.brand} device is OFF.`;
     }
