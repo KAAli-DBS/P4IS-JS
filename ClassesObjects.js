@@ -74,4 +74,3 @@ const counter = new Counter();
 counter.increment(); 
 console.log(counter.getCount()); 
 // console.log(counter.#count); 
-
