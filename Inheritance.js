@@ -18,7 +18,8 @@ class ElectronicDevice {
      return this.powerStatus ? `${this.brand} device is ON.` : `${this.brand} device is OFF.`;
     }
     }
-class Mobile extends ElectronicDevice {
+
+    class Mobile extends ElectronicDevice {
     constructor(brand, model, batteryLife) {
      super(brand);
      this.model = model;
@@ -36,6 +37,7 @@ class Mobile extends ElectronicDevice {
      }
      }
     }
+
 const myPhone = new Mobile('Samsung', 'Galaxy S21', 24);
 
 // Powering on the mobile and making a call myPhone.powerOn(); 

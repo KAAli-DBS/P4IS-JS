@@ -6,7 +6,7 @@ class Employee {
     }
 
     getEmployeeDetails() {
-        return `${this.name} is a(n) ${this.role} earning $${this.salary} per year.`;
+        return `${this.name} is ${this.role} and earning $${this.salary} per year.`;
     }
 
     // Method for calculating yearly bonus
