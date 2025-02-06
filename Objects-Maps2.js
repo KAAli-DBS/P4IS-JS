@@ -9,14 +9,16 @@ const obj = {
 
 console.log("Object Example:");
 
-// for (let [key, value] of obj) { 
-//    console.log(key, value);
-// }
+/*
+ for (let [key, value] of obj) { 
+    console.log(key, value);
+ }
+    */
 
 // Instead, use Object.entries() to make it iterable
-//for (let [key, value] of Object.entries(obj)) {
-//    console.log(`${key}: ${value}`);
-//}
+for (let [key, value] of Object.entries(obj)) {
+    console.log(`${key}: ${value}`);
+}
 
 
 // Create a map

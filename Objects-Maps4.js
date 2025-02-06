@@ -30,8 +30,8 @@ console.log(personMap.get('name'));
 console.log(personMap.get('age'));  
 
 
-//personMap.set('getInfo', function() {
-  //  return `${this.get('name')}, ${this.get('age')} years old, lives in ${this.get('city')}.`;
-//});
+personMap.set('getInfo', function() {
+    return `${this.get('name')}, ${this.get('age')} years old, lives in ${this.get('city')}.`;
+});
 
 console.log(personMap.get('getInfo'));
