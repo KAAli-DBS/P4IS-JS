@@ -18,7 +18,6 @@ class PhoneBook {
     sortContacts() {
         this.contacts.sort((a, b) => a.fullName.localeCompare(b.fullName));
     }
-
     // Binary search method to find a contact by full name
     binarySearch(fullName) {
         this.sortContacts(); 
@@ -43,7 +42,7 @@ class PhoneBook {
 
     // Method to display all contacts
     displayContacts() {
-        this.sortContacts(); 
+        //this.sortContacts(); 
         this.contacts.forEach(contact =>
             console.log(`Name: ${contact.fullName}, Phone: ${contact.phoneNumber}`)
         );
